@@ -7,6 +7,13 @@ Code for continuous temperature and humidity sensing with a BME688 sensor
 - BME688 sensor, with trace on back of board marked ADDR cut
 - Pi400
 
+## Setup
+- 2-6V connected to 3.3 VDC power (header pin 1)
+- SDA connected to GPIO8 (header pin 3)
+- SCL connected to GPIO9 (header pin 5)
+- GND connected to Ground (header pin 9)
+
+
 ## Guide for monitoring temperature and humidty at set time points
 ----------------
 1) copy forked link from Github and git clone https://github.com/pimoroni/bme680-python.git
