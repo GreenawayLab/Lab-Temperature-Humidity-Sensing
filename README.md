@@ -21,3 +21,7 @@ Code for continuous temperature and humidity sensing with a BME688 sensor
 4) Enable I2C 'sudo raspi-config' (Interface options > I2C to Yes)
 5) Check sensor being detected 'i2cdetect -y 1' - BME688 should be in 77, if in 76 (which we found did not work with 'bme680-python' can cut the trace on the back of the board marked ADDR)
 6) Save `lab-temp-humidity.py` to folder and run 'python3 lab-temp-humidity.py' - data can be stored to a .txt using 'python3 lab-temp-humidity.py > txt file' and example of output included as 'sensor_output.txt'
+
+## Script Parameters
+----------------
+The sleep time can be changed between measurements, and the sensor is also capable of outputing pressure measurements as well.
