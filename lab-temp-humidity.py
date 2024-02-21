@@ -21,13 +21,6 @@ sensor.set_humidity_oversample(bme680.OS_2X)
 sensor.set_temperature_oversample(bme680.OS_8X)
 sensor.set_filter(bme680.FILTER_SIZE_3)
 
-#def store_data(time,temperature,humidity):
-#    append = [time,temperature,humidity]
-#    with open('sensor_output.csv', 'a') as csvFile:
-#        writer = csv.writer(csvFile)
-#        writer.writerow(append)
-#    csvFile.close()
-
 print('Data sensing')
 
 try:
@@ -37,10 +30,6 @@ try:
                 sensor.data.temperature,
                 sensor.data.humidity)
             print(output)
-
-#    while True:
-#        if  sensor.get_sensor_data():
-#            store_data(datatime.now().strftime('%Y-%m-%d,%H:%M:%S,'),sensor.data.temperature,sensor.data.humidity)
 
         sleep(30)
 
