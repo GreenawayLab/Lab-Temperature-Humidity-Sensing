@@ -1,5 +1,4 @@
 # Lab-Temperature-Humidity-Sensing
-----------------
 Code for continuous temperature and humidity sensing with a BME688 sensor
 
 ## Hardware
