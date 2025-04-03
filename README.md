@@ -47,4 +47,5 @@ The interface will prompt the user to select a plotting mode:
   - Plots the average values for each hour from all available data
 - Continuous
   - Similar to Daily, but plots each data point instead of an average\
+
 Leaving the field blank and pressing enter will plot the last recorded day
