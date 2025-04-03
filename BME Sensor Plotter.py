@@ -234,17 +234,17 @@ def plotcontinuous():
 datafile = datafiles	
 while "i" in "Hi":
 	datafile = "n"
-	print("Enter: \"list\" - to plot a particular day\
-	\nLeave blank - to plot the current day\n\
-	\"Daily\" - to plot the daily averages\n\
-	\"Hourly\" - to plot the hourly averages\n\
-	\"Continuous\" - to plot every reading. ")
+	print("Enter:\n\t\"Day\" - to plot a particular day\
+	\n\t\"Daily\" - to plot the daily averages\
+	\n\t\"Hourly\" - to plot the hourly averages\
+	\n\t\"Continuous\" - to plot every reading\
+	\n\n\tLeave blank to plot the most recent day")
 	while datafile == "n":
 		g = input("Plot: ")
 		if g == "":
 			datafile = datafiles[-1] #The latest datafile
 			plotday(datafile)
-		elif g == "list" or g == "List":
+		elif g.capitalize() == "Day":
 			for i, line in enumerate(datafiles):
 				print(f"{i}: {line}")
 			while datafile == "n":
